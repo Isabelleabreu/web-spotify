@@ -1,0 +1,192 @@
+/* Estilos Gerais para o Corpo da Página */
+body {
+    background-color: #121212; /* Fundo escuro */
+    color: #ffffff; /* Texto branco */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para o Cabeçalho (Header) */
+header {
+    background-color: #1db954;
+    padding: 15px 40px; /* Reduz a espessura da faixa verde */
+    display: flex;
+    justify-content: space-between; /* Empurra o logo para a esquerda e o input para a direita */
+    align-items: center;
+    flex-wrap: wrap; /* Permite que os itens quebrem para a linha de baixo em telas pequenas */
+}
+
+.logo-area {
+    /* Contêiner para o ícone e o texto do logo */
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaço entre o ícone e o texto */
+}
+
+.logo-area h1 img {
+    height: 80px;
+    width: 100px;
+}
+
+.logo-area h1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    font-size: 1.5em; 
+    line-height: 1;
+}
+
+.logo-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.search-container {
+    /* Este contêiner irá ocupar todo o espaço restante e centralizar o item dentro dele */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente o input */
+    flex-grow: 1; /* Faz com que o contêiner ocupe o espaço disponível */
+}
+
+#searchInput {
+    padding: 10px 20px;
+    width: 600px; /* Define o comprimento da barra de pesquisa */
+    max-width: 100%; /* Garante que a barra não ultrapasse a largura do contêiner */
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Estilos para a Seção Principal */
+main {
+    padding: 20px;
+}
+
+/* Estilos para a Seção do Banner com o Vídeo */
+.player-section {
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Alinha os itens em uma coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    text-align: center;
+    padding: 80px 0; /* Adiciona um espaçamento generoso em cima e embaixo */
+    margin: 0;
+    background-image: url('img/banner.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.video-text {
+    color: #fff;
+    background-color: #000000;
+    padding: 8px 10px;
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 2px 2px 4px #000000;
+    margin-bottom: 20px; /* espaço entre o texto e o vídeo */
+    z-index: 10;
+}
+
+#playerContainer {
+    width: 560px; /* recomendação do youtube */
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#playerContainer iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9; /* mantém a proporção do vídeo (16:9) */
+}
+
+/* Seção dos Resultados (Artistas/Músicas) */
+.results-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#tracksContainer {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* Para quebra de linha em telas pequenas */
+}
+
+/* Estilo para cada "caixa" de música ou artista */
+.track-card {
+    background-color: #282828;
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.track-card:hover {
+    transform: translateY(-5px); /* Efeito ao passar o mouse */
+}
+
+.track-image {
+    width: 100%;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #121212;
+    border-top: 1px solid #282828;
+    color: #ffff;
+    font-size: 0.9em;
+    font-family: 'Inter', sans-serif;
+    font-style: italic; /* Adiciona o estilo itálico */
+}
+
+/* --- Media Queries --- */
+
+/* Estilos para Telas Menores (celulares) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Alinha o logo e a busca em coluna */
+        gap: 15px;
+        padding: 15px 20px; /* Diminui o padding para telas menores */
+    }
+
+    .logo-area {
+        width: 100%;
+        justify-content: center; /* Centraliza o logo em telas pequenas */
+    }
+
+    .search-container {
+        width: 100%; /* Faz a barra de pesquisa ocupar toda a largura */
+        flex-grow: 0;
+    }
+
+    #searchInput {
+        width: 90%; /* Barra de pesquisa com largura flexível */
+    }
+
+    .player-section {
+        padding: 40px 0; /* Diminui o padding para telas menores */
+    }
+
+    #playerContainer {
+        width: 95%; /* Aumenta a largura do vídeo para telas menores */
+    }
+
+    .track-card {
+        width: 150px; /* Diminui o tamanho dos cards para caberem na tela */
+    }
+}
