@@ -1,5 +1,5 @@
 // URL base do servidor
-const API_URL = "http://localhost:3000"; // ou "" se o site estiver servido pelo mesmo servidor
+const API_URL = "https://web-spotify.onrender.com";
 
 // Ouve o evento de Enter no campo de busca
 document.getElementById('searchInput').addEventListener('keydown', async (event) => {
