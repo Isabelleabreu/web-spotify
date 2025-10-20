@@ -1,5 +1,5 @@
 const client_id = 'ee1db331a75445d18b7b415b04f4d00c';
-const client_secret = 'deb30321e9394d039bcd9053258ec255';
+const client_secret = '5cdd7d76858f43a5beb7457a98ca2f7e';
 
 // URL para obter o token (Substituído para a URL correta do Spotify)
 const tokenUrl = 'https://accounts.spotify.com/api/token';
