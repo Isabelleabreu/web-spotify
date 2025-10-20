@@ -1,0 +1,184 @@
+body {
+    background-color: #121212; /* Fundo escuro */
+    color: #ffffff; /* Texto branco */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: #1db954;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Responsividade */
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-area h1 img {
+    height: 80px;
+    width: 100px;
+}
+
+.logo-area h1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    font-size: 1.5em;
+    line-height: 1;
+}
+
+.logo-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+#searchInput {
+    padding: 10px 20px;
+    width: 600px;
+    max-width: 100%;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: justify;
+}
+
+.banner-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+.banner-img img {
+    max-width: 2000px;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* Texto */
+main p {
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+/* Imagem do violão */
+.img-violao img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin: 30px 0;
+}
+
+/* player do spotify */
+
+.spotify-player {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.spotify-player h2 {
+    color: #1db954;
+    margin-bottom: 15px;
+}
+
+/* artistas em destaque */
+
+#artistas {
+    margin-top: 60px;
+}
+
+#artistas h2 {
+    text-align: center;
+    color: #1db954;
+    margin-bottom: 20px;
+}
+
+.artistas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.artista-card {
+    text-align: center;
+    background: #181818;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease;
+}
+
+.artista-card:hover {
+    transform: scale(1.03);
+}
+
+.artista-card p {
+    margin-top: 10px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #121212;
+    border-top: 1px solid #282828;
+    color: #ffffff;
+    font-size: 0.9em;
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .logo-area h1 {
+        font-size: 1.2em;
+    }
+
+    #searchInput {
+        width: 90%;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .artistas-grid {
+        grid-template-columns: 1fr;
+    }
+}

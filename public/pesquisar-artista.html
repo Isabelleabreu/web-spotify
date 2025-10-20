@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MPB: A Jornada Musical</title>
+  <link rel="stylesheet" href="./buscar-art.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo-area">
+      <h1>
+        <img src="./img/Music Record.svg" alt="Logo MPB Brasil" class="logo-icon">
+        MPB <br> BRASIL
+      </h1>
+    </div>
+
+    <div class="search-container">
+      <a href="./index.html">
+        <input type="text" id="searchInput" placeholder="Pesquise seu artista...">
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Banner -->
+    <div class="banner-img">
+      <img src="./img/usiness.svg" alt="banner-MPB">
+    </div>
+
+    <!-- Texto principal -->
+    <p>
+      Bem-vindo ao Universo da MPB!  
+      Aqui, você encontra uma experiência completa para os apaixonados pela Música Popular Brasileira. Descubra artistas icônicos e mergulhe na riqueza sonora que representa o coração do Brasil.
+    </p>
+
+    <!-- Player de playlist -->
+    <div class="spotify-player">
+      <h2>Ouça a Playlist “MPB Clássica”</h2>
+      <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/playlist/37i9dQZF1DX2iUp2zRnhtp"
+        width="100%" height="380" frameBorder="0"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy">
+      </iframe>
+    </div>
+
+    <!-- Artistas em Destaque -->
+    <section id="artistas">
+      <h2>Artistas em Destaque</h2>
+      <div id="lista-artistas" class="artistas-grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Isabelle Abreu</p>
+  </footer>
+  
+</body>
+</html>

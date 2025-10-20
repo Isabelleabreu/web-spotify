@@ -1,0 +1,17 @@
+{
+  "name": "spotify-mpb-server",
+  "version": "1.0.0",
+  "description": "Servidor proxy seguro para buscar dados da API do Spotify",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Seu Nome",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "node-fetch": "^3.3.2"
+  }
+}
