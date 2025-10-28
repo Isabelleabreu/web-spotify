@@ -36,6 +36,11 @@ header {
     margin: 0;
     font-size: 1.5em; 
     line-height: 1;
+   
+}
+
+.logo-area a {
+     color: #ffffff;
 }
 
 .logo-icon {
@@ -142,6 +147,27 @@ main {
     width: 100%;
     border-radius: 5px;
 }
+
+/* link para abrir pagina do artista no Spotify */
+#artistBio {
+    margin-bottom: 20px; /* espaço abaixo */
+    margin-top: -10px; /* sobe um pouco o link sem colar nos cards */
+}
+
+.spotify-link {
+    display: inline-block;
+    color: #ffffff; /* branco */
+    text-decoration: none; /* remove sublinhado */
+    font-weight: bold;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+.spotify-link:hover {
+    color: #1db954; /* verde Spotify ao passar o mouse */
+    text-decoration: underline;
+}
+
 
 footer {
     text-align: center;

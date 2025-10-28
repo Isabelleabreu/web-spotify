@@ -109,42 +109,6 @@ main p {
     margin-bottom: 15px;
 }
 
-/* artistas em destaque */
-
-#artistas {
-    margin-top: 60px;
-}
-
-#artistas h2 {
-    text-align: center;
-    color: #1db954;
-    margin-bottom: 20px;
-}
-
-.artistas-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.artista-card {
-    text-align: center;
-    background: #181818;
-    border-radius: 12px;
-    padding: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-    transition: transform 0.2s ease;
-}
-
-.artista-card:hover {
-    transform: scale(1.03);
-}
-
-.artista-card p {
-    margin-top: 10px;
-    color: #ffffff;
-    font-weight: bold;
-}
 
 
 footer {
